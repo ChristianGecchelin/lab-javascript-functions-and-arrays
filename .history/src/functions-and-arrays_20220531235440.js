@@ -52,15 +52,10 @@ const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 function averageNumbers(array) {
   let sum = 0;
   let average = 0;
-  if (array.length === 0) {
-    average = null;
-  } else {
-    for (const iterator of array) {
-      sum += iterator;
-    }
-
-    average = sum / array.length;
+  for (const iterator of array) {
+    sum += iterator;
   }
+  average = sum / array.length;
   return average;
 }
 averageNumbers(numbersAvg);
@@ -68,20 +63,7 @@ averageNumbers(numbersAvg);
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength(array) {
-  let sum = 0;
-  let average = 0;
-  if (array.length === 0) {
-    average = null;
-  } else {
-    for (const iterator of array) {
-      sum += iterator.length;
-    }
-
-    average = sum / array.length;
-  }
-  return average;
-}
+function averageWordLength() {}
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -101,37 +83,12 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray(array) {
-  let arrayWithoutDuplicates = [];
-  if (array.length === 0) {
-    arrayWithoutDuplicates = null;
-  } else {
-    for (const iterator of array) {
-      if (!arrayWithoutDuplicates.includes(iterator)) {
-        arrayWithoutDuplicates.push(iterator);
-      }
-    }
-  }
-  return arrayWithoutDuplicates;
-}
+function uniquifyArray() {}
 
 // Iteration #6: Find elements
-
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
-const word = 'ropa';
-function doesWordExist(array) {
-  let exist;
-  if (array.length === 0) {
-    exist = null;
-  } else {
-    if (array.includes(word)) {
-      exist = true;
-    } else {
-      exist = false;
-    }
-  }
-  return exist;
-}
+
+function doesWordExist() {}
 
 // Iteration #7: Count repetition
 const wordsCount = [

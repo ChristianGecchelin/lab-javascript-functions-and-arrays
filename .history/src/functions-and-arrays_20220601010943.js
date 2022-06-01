@@ -130,7 +130,7 @@ function doesWordExist(array) {
       exist = false;
     }
   }
-  return exist;
+  return console.log(exist);
 }
 
 // Iteration #7: Count repetition

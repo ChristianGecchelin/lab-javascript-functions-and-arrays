@@ -119,12 +119,12 @@ function uniquifyArray(array) {
 
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 const word = 'ropa';
-function doesWordExist(array) {
+function doesWordExist() {
   let exist;
-  if (array.length === 0) {
+  if (wordsFind.length === 0) {
     exist = null;
   } else {
-    if (array.includes(word)) {
+    if (wordsFind.includes(word)) {
       exist = true;
     } else {
       exist = false;
